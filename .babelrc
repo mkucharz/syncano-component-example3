@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["env", {
+      "modules": false,
+      "loose": false
+    }],
+    "react"
+  ],
+  "plugins": [
+    ["styled-jsx/babel", {
+      "sourceMaps": false
+    }],
+    "dynamic-import-webpack",
+    "transform-runtime",
+    "transform-export-extensions",
+    "transform-class-properties",
+    "transform-object-rest-spread"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "baseUrl": "./workspaces",
+    "paths": {
+      "@shared/*": ["./shared/*"],
+      "@website/*": ["./website/*"]
+    },
+    "experimentalDecorators": true,
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "module": "esnext",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "jsx": "preserve",
+    "target": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "include": [
+    "workspaces/**/*",
+    "syncano/**/*"
+  ],
+  "exclude": [
+    ".config/**/*"
+  ]
+}
